@@ -8,7 +8,7 @@ private func _when<T>(_ promises: [Promise<T>]) -> Promise<Void> {
       #if swift(>=4.0)
         root.fulfill(())
       #else
-        root.fulfill()
+        root.fulfill(())
       #endif
         return root.promise
     }
@@ -41,7 +41,7 @@ private func _when<T>(_ promises: [Promise<T>]) -> Promise<Void> {
                       #if swift(>=4.0)
                         root.fulfill(())
                       #else
-                        root.fulfill()
+                        root.fulfill(())
                       #endif
                     }
                 }
