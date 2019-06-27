@@ -64,7 +64,7 @@ public func wrap(_ body: (@escaping (Error?) -> Void) throws -> Void) -> Promise
               #if swift(>=4.0)
                 fulfill(())
               #else
-                fulfill()
+                fulfill(())
               #endif
             }
         }
